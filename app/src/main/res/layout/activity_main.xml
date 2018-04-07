@@ -8,22 +8,27 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/swapColor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:text="@string/swap_color"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            android:text="AutoReSizeImage"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
         <CustomViewClass.MyView
             android:id="@+id/customView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:square_size="@dimen/square_size"
-            app:square_color="@color/squareColor" />
+            android:layout_height="403dp"
+            app:square_color="@color/squareColor"
+            app:square_size="@dimen/square_size" />
 
     </RelativeLayout>
 
